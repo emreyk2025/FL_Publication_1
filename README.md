@@ -1,1 +1,1 @@
-# FL_Publication_1
+# Federated Learning for Smart Cities: Forecasting Short-term Residential Energy Consumption
