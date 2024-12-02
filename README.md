@@ -9,5 +9,16 @@ This project aims to highlight the main advantages of federated learning in shor
 - METER UK Household Electricity and Activity Survey - UK
 - SmartMeter Energy Consumption Data in London Households - UK
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 ## Models
 
+- Simple LSTM
+- Stacked LSTM
+- Bidirectional LSTM
+- GRU
+- XGBoost
+- LightGBM
