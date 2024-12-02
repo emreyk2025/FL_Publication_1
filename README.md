@@ -30,5 +30,9 @@ This project aims to highlight the main advantages of federated learning in shor
 
 ## Code Structure
 
-This GitHub repository provides the simulation pipeline to run each forecasting model on both centralized and federated learning settings using preprocessed datasets iteratively. The Python code is prepared in a modular structure where individual files are imported and used in the main file. The datasets to be used are stored in the Datasets folder together with the preprocessing scripts. The rest of the files can be found in the "Simulation Scripts" folder.
+This GitHub repository provides the simulation pipeline to run each forecasting model on both centralized and federated learning settings using preprocessed datasets iteratively. The Python code is prepared in a modular structure where individual files are imported and used in the main file. The data preprocessing notebooks are stored in the Datasets folder. The preprocessed datasets can be accessed using the Google Drive link below:
+
+https://drive.google.com/drive/folders/1vvCZaxM0p65zaKHAp7656IoOSP4xvQ-5?usp=sharing
+
+The rest of the files can be found in the "Simulation Scripts" folder.
 
