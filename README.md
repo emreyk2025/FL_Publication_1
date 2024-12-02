@@ -30,37 +30,5 @@ This project aims to highlight the main advantages of federated learning in shor
 
 ## Code Structure
 
-This GitHub repository provides the simulation pipeline to run each forecasting model on both centralized and federated learning frameworks.
-
-project-root/
-├── data/
-│   ├── raw/                # Placeholder for original datasets
-│   ├── processed/          # Placeholder for preprocessed datasets
-│   └── loaders/            # Placeholder for data loading and augmentation scripts
-├── models/
-│   ├── centralized/        # Placeholder for centralized models
-│   ├── federated/          # Placeholder for federated models
-│   └── utilities/          # Includes shared utilities like `utils.py`
-│       └── utils.py        # Uploaded utility file
-├── simulations/
-│   ├── centralized/        # Placeholder for centralized simulation scripts
-│   ├── federated/          # Placeholder for federated simulation scripts
-│   ├── comparison.py       # Placeholder for benchmarking scripts
-│   ├── main_file.py        # Uploaded main execution script
-│   ├── run.py              # Script to run the simulations
-│   ├── server_app.py       # Server-side application logic
-│   └── client_app.py       # Client-side application logic
-├── notebooks/
-│   ├── EDA/                # Placeholder for exploratory data analysis notebooks
-│   ├── model_tuning/       # Placeholder for hyperparameter tuning experiments
-│   └── results_analysis/   # Placeholder for results visualization and analysis
-├── results/
-│   ├── logs/               # Placeholder for training and evaluation logs
-│   ├── models/             # Placeholder for saved models
-│   └── reports/            # Placeholder for performance reports
-├── scripts/
-│   ├── Flower_Client.py    # Federated client implementation
-│   └── Input_prep.py       # Data preparation script
-├── requirements.txt        # Placeholder for Python packages list
-└── README.md               # Placeholder for project documentation
+This GitHub repository provides the simulation pipeline to run each forecasting model on both centralized and federated learning frameworks. The Python code is prepared in a modular structure where individual files are imported and used in the main file. The datasets to be used are stored in the Datasets folder together with the preprocessing scripts. The rest of the files can be found in the "Scripts" folder.
 
