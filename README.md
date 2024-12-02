@@ -6,8 +6,8 @@ This project aims to highlight the main advantages of federated learning in shor
 
 - Smart Grid Smart City Customer Trial Data - Australia
 - GoiEner Dataset - Spain
-- METER UK Household Electricity and Activity Survey - UK
-- SmartMeter Energy Consumption Data in London Households - UK
+- METER UK Household Electricity and Activity Survey - United Kingdom
+- SmartMeter Energy Consumption Data in London Households - United Kingdom
 
 
 
