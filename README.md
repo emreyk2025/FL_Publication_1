@@ -35,7 +35,7 @@ This GitHub repository provides the simulation pipeline to run each forecasting 
 
 https://drive.google.com/drive/folders/1vvCZaxM0p65zaKHAp7656IoOSP4xvQ-5?usp=sharing
 
-Summary table for the identified datasets:
+A summary table for the identified datasets:
 
 https://docs.google.com/spreadsheets/d/1ITpv8mRyQ7N0JAh97GfTNjc3XqFATZcrDcUY_fXbyMM/edit?usp=sharing
 
