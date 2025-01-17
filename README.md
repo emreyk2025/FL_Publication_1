@@ -14,9 +14,10 @@ This project aims to highlight the main advantages of federated learning in shor
 | **Dataset**       | **Time Period**       | **Time Intervals**       | **Size of the Data**       |
 |:-------------------:|:------------------:|:------------------:|:------------------:|
 | Smart Grid Smart City Customer Trial Data       | 2010 - 2014      | 30 min.      | 18.8 GB      |
+| SmartMeter Energy Consumption Data in London Households       | 2011 - 2014      | 30 min      | 10 GB      |
 | GoiEner Data Set       | 2014 - 2022      |  Hourly     | 20.5 GB      |
 | METER UK Household Electricity and Activity Survey       | 2016 - 2019      |  Minutely      | 22 MB      |
-| SmartMeter Energy Consumption Data in London Households       | 2011 - 2014      | 30 min      | 10 GB      |
+
 
 
 ## Models
