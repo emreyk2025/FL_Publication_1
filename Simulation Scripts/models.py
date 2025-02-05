@@ -49,7 +49,7 @@ def get_LSTM_stacked(time_steps, num_features, learning_rate):
 def get_GRU(time_steps, num_features, learning_rate):
     model = Sequential()
     model.add(layers.Input(shape=(time_steps, num_features)))
-    model.add(layers.LSTM(20, return_sequences=True))
+    model.add(layers.GRU(20, return_sequences=True))  # Corrected: GRU instead of LSTM
     model.add(layers.Dropout(0.2))
     model.add(layers.GRU(18, return_sequences=True))
     model.add(layers.Dropout(0.2))
