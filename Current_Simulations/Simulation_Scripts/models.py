@@ -6,15 +6,15 @@ import xgboost as xgb
 # issue I had to import keras and tensorflow seperately. from keras.layers import LSTM also doesn't work you have to call LSTM as
 # layers.LSTM.
 
-def get_LSTM_Simple(time_steps, num_features, learning_rate):
+def get_LSTM_Simple(time_steps, num_features, learning_rate, neurons=60, loss_function='mean_squared_error'):
     model = Sequential()
     model.add(layers.Input(shape=(time_steps, num_features)))
-    model.add(layers.LSTM(60, return_sequences=True))  
+    model.add(layers.LSTM(neurons, return_sequences=True))
     model.add(layers.Dropout(0.2))
     model.add(layers.Dense(1))
 
     optimizer=optimizers.Adam(learning_rate=learning_rate)
-    model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=['mean_absolute_error'])
+    model.compile(optimizer=optimizer, loss=loss_function, metrics=['mean_absolute_error'])
     return model
 
 def get_LSTM_Bidirectional(time_steps, num_features, learning_rate):
@@ -29,21 +29,21 @@ def get_LSTM_Bidirectional(time_steps, num_features, learning_rate):
     return model
 
 
-def get_LSTM_stacked(time_steps, num_features, learning_rate):
+def get_LSTM_stacked(time_steps, num_features, learning_rate, neurons=60, loss_function='mean_squared_error'):
     model = Sequential()
     model.add(layers.Input(shape=(time_steps, num_features)))
-    model.add(layers.LSTM(20, return_sequences=True)) 
+    model.add(layers.LSTM(neurons//2, return_sequences=True)) 
     model.add(layers.Dropout(0.2))
-    model.add(layers.LSTM(18, return_sequences=True))
+    model.add(layers.LSTM(neurons//3, return_sequences=True))
     model.add(layers.Dropout(0.2))
-    model.add(layers.LSTM(14, return_sequences=True))
+    model.add(layers.LSTM(neurons//4, return_sequences=True))
     model.add(layers.Dropout(0.2))
-    model.add(layers.LSTM(7))  
+    model.add(layers.LSTM(neurons//12))  
     model.add(layers.Dropout(0.2))
     model.add(layers.Dense(1))
 
     optimizer = optimizers.Adam(learning_rate=learning_rate)
-    model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=['mean_absolute_error'])
+    model.compile(optimizer=optimizer, loss=loss_function, metrics=['mean_absolute_error'])
     return model
 
 def get_GRU(time_steps, num_features, learning_rate):
